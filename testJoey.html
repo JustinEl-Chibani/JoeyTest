@@ -10,7 +10,6 @@
             height: 100vh;
             margin: 0;
             display: flex;
-            flex-direction: column; /* Stack elements vertically */
             justify-content: center;
             align-items: center;
             background-color: black;
@@ -19,21 +18,11 @@
         }
 
         h1 {
-            font-size: 8vw; 
+            font-size: 8vw; /* Responsive font size */
             text-align: center;
             opacity: 0;
             transform: scale(0);
             animation: popUp 2s forwards;
-        }
-
-        h3 {
-            font-size: 4vw; /* Smaller size for h3 */
-            text-align: center;
-            opacity: 0;
-            transform: scale(0);
-            animation: popUp 2s forwards 0.5s; /* Delay the h3 animation */
-            margin-top: 10px; /* Slight margin to push it below h1 */
-            margin-left: 20px; /* Shift h3 slightly to the right */
         }
 
         @keyframes popUp {
@@ -51,13 +40,15 @@
             }
         }
 
+        /* Optional: Prevent text from overflowing on very small screens */
         @media (max-width: 320px) {
-            h1, h3 {
-                font-size: 6vw; /* Adjust font size for smaller screens */
+            h1 {
+                font-size: 6vw;
             }
         }
-
     </style>
 </head>
 <body>
-    <h1>"G
+    <h1>"Hey, how are you?"</h1>
+</body>
+</html>
