@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 8vw; /* Responsive font size */
+            text-align: center;
+            opacity: 0;
+            transform: scale(0);
+            animation: popUp 2s forwards;
+        }
+
+        @keyframes popUp {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Optional: Prevent text from overflowing on very small screens */
+        @media (max-width: 320px) {
+            h1 {
+                font-size: 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>"Hey, how are you?"</h1>
+</body>
+</html>
