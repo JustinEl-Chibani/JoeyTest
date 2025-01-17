@@ -1,4 +1,4 @@
-This is just a test website I jokingly coded for my tech uncle's birthday. I used GitHub HTML Previewer to share the website, and then condenses the url to a "shorturl".
+This is just a website I jokingly coded for my tech uncle's birthday. I used GitHub HTML Previewer to share the website, and then condenses the url to a "shorturl".
 
 https://htmlpreview.github.io/
 ↓
